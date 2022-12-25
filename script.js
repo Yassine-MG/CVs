@@ -12,9 +12,7 @@ typewriter.typeString('<strong>Web </strong>')
     .deleteAll()
     .start();
 
-    let x = document.querySelectorAll(".progress-bar") ;
-    let n;
-
+    
      anime({
         targets: '.progress-bar',
         width: `100%`, // -> from '28px' to '100%',
@@ -22,11 +20,3 @@ typewriter.typeString('<strong>Web </strong>')
         direction: 'alternate',
         loop: false
     });
-
-    // anime({
-    //     targets: '.progress-bar',
-    //     width: "100%", // -> from '28px' to '100%',
-    //     easing: 'easeInOutQuad',
-    //     direction: 'alternate',
-    //     loop: false
-    //   });
