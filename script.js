@@ -3,7 +3,7 @@ let progress = document.querySelector(".progress-bar")
 let typewriter = new Typewriter(app, {
     loop: true
 });
-
+// import './node_modules/animejs/lib/anime.js'
 typewriter.typeString('<strong>Web </strong>')
     .pauseFor(2000)
     .deleteChars(4)
@@ -12,7 +12,7 @@ typewriter.typeString('<strong>Web </strong>')
     .deleteAll()
     .start();
 
-    
+
      anime({
         targets: '.progress-bar',
         width: `100%`, // -> from '28px' to '100%',
@@ -20,3 +20,4 @@ typewriter.typeString('<strong>Web </strong>')
         direction: 'alternate',
         loop: false
     });
+    
